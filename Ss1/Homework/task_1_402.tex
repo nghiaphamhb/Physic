@@ -1,0 +1,39 @@
+\subsection*{Иродов 1.402}
+
+\setcounter{equation}{0}
+
+\begin{abstract}
+Собственное время жизни некоторой нестабильной частицы $\Delta t_0 = 10$ нс. Найти путь, который пролетит эта частица до распада в лабораторной системе отсчёта, где её время жизни $\Delta t = 20$ нс.
+\end{abstract}
+
+\noindent\hrulefill
+
+\textbf{Формула для замедления времени:}
+\begin{equation*}
+\Delta t = \frac{\Delta t_0}{\sqrt{1 - (v/c)^2}}.
+\end{equation*}
+
+Отсюда находим скорость $v$ частицы:
+\begin{align*}
+1 - (v/c)^2 &= \left(\frac{\Delta t_0}{\Delta t}\right)^2 \\
+\Longleftrightarrow  (v/c)^2 &= 1 - \left(\frac{\Delta t_0}{\Delta t}\right)^2 \\
+\Longrightarrow v &= c \cdot \sqrt{1 - \left(\frac{\Delta t_0}{\Delta t}\right)^2}.
+\end{align*}
+
+Путь $S$, пройденный частицей за время $\Delta t$:
+\begin{align*}
+S &= v \cdot \Delta t \\
+  &= c \cdot \Delta t \cdot \sqrt{1 - \left(\frac{\Delta t_0}{\Delta t}\right)^2}.
+\end{align*}
+
+Вычисления:
+\begin{align*}
+S &= 3 \cdot 10^8 \cdot 20 \cdot 10^{-9} \cdot \sqrt{1 - \left(\frac{10 \cdot 10^{-9}}{20 \cdot 10^{-9}}\right)^2} \\
+  &= 6 \cdot \sqrt{1 - 0.25} \ \text{(м)} \\
+  &= 6 \cdot \sqrt{0.75} \ \text{(м)} \\
+  &\approx 5.196 \ \text{м}.
+\end{align*}
+
+
+ОТВЕТ: \\
+\(S \approx 5.196 \ \text{м}.\)
