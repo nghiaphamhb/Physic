@@ -1,0 +1,31 @@
+\subsection*{Иродов 2.32}
+
+\setcounter{equation}{0}
+
+\begin{abstract}
+Система состоит из шара радиуса $R$, заряженого сферически-симметрично, и окружающей среды, заполненной зарядом с
+объемной плотностью $\rho = \alpha/r$, где $\alpha$ — постоянная, $r$ — расстояние от центра шара. Пренебрегая влиянием вещества, найти заряд шара, при котором модуль напряженности электрического
+поля вне шара не зависит от $r$. Чему равна эта напряженность?
+\end{abstract}
+
+\noindent \hrulefill
+\\
+Заряд в окрестностях шара в точке с радиусом r > R:  
+
+$$q'= \displaystyle \int_{R}^{r} \rho \times dV = \displaystyle \int_{R}^{r} \rho \times 4 \pi r^2 dr = 4 \pi \alpha\displaystyle \int_{R}^{r} r .dr = 2 \pi \alpha (r^2 - R^2)  $$
+
+Согласно теореме Гаусса: 
+$$\Phi_E = E \times 4 \pi r^2 = \frac{q + q'}{\epsilon_0}$$
+Напряженность электрического поля вокруг сферы радиусом r: 
+$$ \xrightarrow{} E = \frac{1}{4 \pi \epsilon_0} \times \frac{q + q'}{r^2} = k \times \frac{q + 2 \pi \alpha(r^2 - R^2)}{r^2} = k \times (2 \pi \alpha + \frac{q - 2 \pi \alpha R^2}{r^2})$$
+модуль напряженности электрического
+поля вне шара не зависит от $r$,  то есть:
+$$ q = 2 \pi \alpha R^2 \xrightarrow[]{} E = k \times 2 \pi \alpha = \frac{\alpha}{2 \epsilon_0}$$
+
+
+
+\textbf{Ответ:}
+$$ q = 2 \pi \alpha R^2 $$
+$$E = k \times 2 \pi \alpha = \frac{\alpha}{2 \epsilon_0}$$
+
+

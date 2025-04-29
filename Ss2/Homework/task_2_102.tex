@@ -1,0 +1,43 @@
+\subsection*{Иродов 2.102}
+
+\setcounter{equation}{0}
+
+\begin{abstract}
+Точечный заряд $q$ находится на плоскости, отделяющей вакуум от безграничного однородного изотропного диэлектрика с проницаемостью $\varepsilon$. Найти модули векторов $D$ и $E$ и потенциал $\varphi$ как функции расстояния $r$ от заряда $q$.
+\end{abstract}
+
+\noindent \hrulefill
+\\
+\begin{wrapfigure}[6]{r}{0.30\textwidth}
+	\raisebox{0pt}[\dimexpr\height-2\baselineskip\relax]{
+	\includegraphics[width=0.30\textwidth]{pics/2_102.jpeg}}
+\end{wrapfigure}
+
+Пусть $D_1$ и $D_2$ - электрические смещения в вакууме и диэлектрике соответственно.
+
+Электрическое поле $E$ в границе между двумя средами:
+
+$$E = \frac{D_1}{\varepsilon_0} = \frac{D_2}{\varepsilon_0 \varepsilon} \xrightarrow{} D_1 = \frac{D_2}{\varepsilon}    \qquad (1)$$
+
+Согласно закону Гаусса, круглая поверхность окружает точку заряда $q$ радиусом $r$ имеющая:
+
+$$\displaystyle \int D.dS = D_1.2\pi r^2 + D_2.2 \pi r^2 = q \xrightarrow[]{} D_1 + D_2 = \frac{q}{2\pi r^2}    \qquad (2)$$
+
+Из $(1), (2) $ получим:
+
+$$D_1 = \frac{q}{(1+\varepsilon)2\pi r^2} ; \quad D_2 = \frac{q .\varepsilon}{(1+\varepsilon)2\pi r^2} $$
+
+$$E = \frac{D_1}{\varepsilon_0} = \frac{q}{\varepsilon_0(1+\varepsilon)2\pi r^2}$$
+
+Потенциал р расстоянии $r$ от $q$:
+
+$$\varphi = - \displaystyle \int E.dr = \frac{q}{\varepsilon_0(1+\varepsilon)2 \pi r}$$
+
+\textbf{Ответ:}
+
+$$D_1 = \frac{q}{(1+\varepsilon)2\pi r^2} ; \quad D_2 = \frac{q .\varepsilon}{(1+\varepsilon)2\pi r^2} ; \quad \varphi = \frac{q}{\varepsilon_0(1+\varepsilon)2 \pi r}$$
+
+
+
+
+

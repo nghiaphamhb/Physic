@@ -1,0 +1,53 @@
+\subsection*{Иродов 2.163}
+
+\setcounter{equation}{0}
+
+\begin{abstract}
+Пространство между двумя проводящими концентрическими сферами, радиусы которых $a$ и $b (a < b)$, заполнено однородной слабо проводящей средой. Емкость такой системы равна $C$. Найти удельное сопротивление среды, если разность потенциалов между сферами, отключенными от внешнего напряжения, уменьшается в $\eta$ раз за время $\triangle t$.
+\end{abstract}
+
+\noindent \hrulefill
+
+Пусть заряд сферы равен $q$. Напряженность электрического поля:
+
+$$E = k  \frac{q}{r^2}$$
+
+Разность потенциалов:
+
+$$U = \displaystyle \int_{a}^{b} E.dr = k.q.(-\frac{1}{r}) |_{a}^{b} = kq(\frac{1}{a} - \frac{1}{b})$$
+
+$$C = \frac{q}{U} = \frac{ab}{k(b-a)} \xrightarrow{} k = \frac{ab}{C(b-a)}  \quad (1)$$
+
+Убывание заряда в единицу времени равно электрическому току:
+
+$$- \frac{dq}{dt} = I \quad (2)$$
+
+Электрический ток:
+
+$$I = \displaystyle \int \sigma .E .ds = \frac{k}{\rho} \displaystyle \int \frac{q}{r^2} 4 \pi r^2 = \frac{kq4 \pi}{\rho}  \quad (3)$$
+
+Из (2), (3):
+
+$$-\frac{dq}{dt} = \frac{kq4 \pi}{\rho}$$
+
+$$\displaystyle \int_{q_0}^{q} \frac{dq}{q} = - \displaystyle \int_{0}^{\triangle t} \frac{k 4 \pi }{\rho} . dt$$
+
+$$\xrightarrow{q = CU} \ln{\frac{q_0}{q}= \ln{\frac{U_0}{U}}} = \ln{\eta} = \frac{k4 \pi \triangle t}{\rho}$$
+
+$$\xrightarrow{(1)} \rho = \frac{k 4 \pi \triangle t}{\ln{\eta}} = \frac{ab}{b-a} . \frac{\triangle t}{C} . \frac{4 \pi}{\ln{\eta}}$$
+
+\textbf{Ответ:}
+
+
+$$\rho = \frac{ab}{b-a} . \frac{\triangle t}{C} . \frac{4 \pi}{\ln{\eta}}$$
+
+
+
+
+
+
+
+
+
+
+
